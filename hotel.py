@@ -1,5 +1,4 @@
 import sys
-import time
 import sqlite3
 import paramiko
 # import mysql.connector
@@ -642,6 +641,7 @@ class Bron(QWidget):
         else:
             cursor.execute(f'UPDATE RoomDescriptions SET checkinout="{checkinout}{self.startDate}:{self.stopDate};" WHERE number={self.room}')
         db.commit()
+        ftp.put("data.db", "/home/fletbot/bron/data.db")
 
 class RegistrationWindow(QWidget):
     '''Окно регистрации'''
