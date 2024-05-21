@@ -333,7 +333,7 @@ class HotelMainApp(QWidget):
         self.accountName = "без аккаунта"
         self.isAuth = False
         self.setGeometry(300, 300, 300, 220)
-        self.setWindowTitle('Отель')
+        self.setWindowTitle('Отель "Олимп"')
         """Расположение картинок, кнопок, информации об аккаунте и т.д"""
         label = QLabel('Гостиница', self)
         pixmap = QPixmap("zxc.png")
